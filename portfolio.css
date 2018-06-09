@@ -1,0 +1,461 @@
+* {
+    box-sizing: border-box;
+    
+}
+
+img {
+    width: 100%;
+}
+
+.img {
+    width: 70%;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+
+}
+
+
+.title {
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+    font-size: 25px;
+    color: white;
+    padding-left: 10px;
+
+}
+
+.h1 {
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+    font-size: 13px;
+    color: #FFFFFF;
+    padding-top: 30px;
+    padding-left: 10px;
+}
+
+.folder {
+    width: 80px;
+    height: 100px;
+
+}
+
+.logoimg {
+    width: 150px;
+    position: static;
+        
+    }
+
+h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    text-align: justify;
+    font-size: 18px;
+    margin: 0px;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    text-align: justify;
+    font-size: 15px;
+    line-height: 1.5em;
+}
+
+a {
+    font-family: 'Montserrat', sans-serif;
+    color: salmon;
+    text-align: justify;
+    font-size: 16px;
+    text-decoration: none;
+    border: 1px solid salmon;
+    padding: 10px 15px;
+}
+
+
+
+/*------------grid desktop------------*/
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 50px 1fr 1fr;
+    grid-template-areas: 
+        "header header header header" 
+        "main main main main"
+}
+
+.title {
+    grid-area: header;
+    text-align: justify;
+}
+
+.h1 {
+    grid-area: header;
+    text-align: justify;
+}
+.header1 {
+    grid-area: header;
+    grid-column: 5/5;
+    grid-row: 1/2;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    color: #FFFFFF;
+}
+.imgmain {
+    grid-area: main;
+    grid-column-start: 2;
+    grid-column-end: 5;
+
+}
+
+/*--------PORTFOLIO DESKTOP WRAPER-----*/
+
+.wrapperportfolio {
+    display: grid;
+    grid-template-columns: 1fr 1fr 50px 1fr 1fr;
+    grid-template-areas: 
+        "header header header header header" 
+        "main main main main main"
+}
+
+header {
+    grid-column: 1/-1;
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 1fr 1fr 50px 1fr 1fr;
+}
+
+img.folder {
+    grid-column: 2/2;
+}
+
+.title2 h2 {
+    grid-column: 2/2;
+    align-self: start;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    margin: 0px;
+
+}
+img:hover {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+.main2 {
+    grid-area: main;
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: 1fr 1fr 50px 1fr 1fr;
+    grid-row-gap: 1ch;
+}
+/*--------grid basic Ux-----*/
+
+.main2 img.imgbux {
+    grid-column: 2/2;
+    margin-top: 40px;
+ 
+}
+
+.main2 h2.h2left {
+    grid-column: 2/2;
+ 
+}
+
+.main2 h2.h2left2 {
+    grid-column: 2/2;
+ 
+}
+
+.main2 p.pleft {
+    grid-column: 2/2;
+ 
+}
+
+.main2 a.buttonleft {
+    grid-column: 2/2;
+
+}
+
+/*--------grid basic content-----*/
+
+.main2 img.imgstory {
+    grid-column: 4/4;
+    grid-row: 1/1;
+    margin-top: 80px;
+    
+}
+
+
+.main2 h2.h2right {
+    grid-column: 4/4;
+    grid-row: 2/2;
+ 
+}
+
+.main2 h2.h2right2 {
+    grid-column: 4/4;
+    grid-row: 3/3;
+ 
+}
+
+.main2 p.pright {
+    grid-column: 4/4;
+    grid-row: 4/4;
+ 
+}
+
+.main2  a.buttonright1 {
+    grid-column: 4/4;
+    grid-row: 5/5;
+
+}
+
+.main2 h3.h3right {
+    grid-column: 4/4;
+    grid-row: 6/6;
+    
+}
+
+.main2 p.pright2 {
+    grid-column: 4/4;
+    grid-row: 7/7;
+    
+}
+
+.main2  a.buttonright2 {
+    grid-column: 4/4;
+    grid-row: 8/8;
+
+}
+/*--------grid basic Animation-----*/
+
+.main2 img.imgBA {
+    grid-column: 2/2;
+    grid-row: 9/9;
+    margin-top: 40px;
+ 
+}
+
+.main2 h2.h2left3 {
+    grid-column: 2/2;
+    grid-row: 10/10;
+}
+
+.main2 h2.h2left4 {
+    grid-column: 2/2;
+    grid-row: 11/11;
+ 
+}
+.main2 h3.h3left1 {
+    grid-column: 2/2;
+    grid-row: 12/12;
+}
+.main2 p.pleft2 {
+    grid-column: 2/2;
+    grid-row: 13/13;
+ 
+}
+.main2 a.buttonleft1 {
+    grid-column: 2/2;
+    grid-row: 14/14;
+}
+.main2 h3.h3left2 {
+    grid-column: 2/2;
+    grid-row: 15/15;
+    
+}
+.main2 a.buttonleft2 {
+    grid-column: 2/2;
+    grid-row: 16/16;
+}
+.main2 h3.h3left3 {
+    grid-column: 2/2;
+    grid-row: 17/17;
+}
+
+.main2 p.pleft3 {
+    grid-column: 2/2;
+    grid-row: 18/18;
+}
+.main2 p.pleft4 {
+    grid-column: 2/2;
+    grid-row: 19/19;
+}
+.main2 a.buttonleft3 {
+    grid-column: 2/2;
+    grid-row: 20/20;
+}
+.main2 a.buttonleft4 {
+    grid-column: 2/2;
+    grid-row: 21/21;
+}
+.main2 a.buttonleft5 {
+    grid-column: 2/2;
+    grid-row: 22/22;
+}
+.main2 h3.h3left4 {
+    grid-column: 2/2;
+    grid-row: 23/23; 
+}
+.main2 p.pleft5 {
+    grid-column: 2/2;
+    grid-row: 24/24; 
+}
+.main2 a.buttonleft6 {
+    grid-column: 2/2;
+    grid-row: 25/25;
+}
+/*--------grid basic Web-----*/
+
+.main2 img.imgBW {
+    grid-column: 4/4;
+    grid-row: 9/9;
+    margin-top: 80px;
+    
+}
+
+.main2 h2.h2right3 {
+    grid-column: 4/4;
+    grid-row: 10/10;
+ 
+}
+
+.main2 h2.h2right4 {
+    grid-column: 4/4;
+    grid-row: 11/11;
+ 
+}
+
+.main2 h3.h3right1 {
+    grid-column: 4/4;
+    grid-row: 12/12;
+    
+}
+
+.main2 p.pright3 {
+    grid-column: 4/4;
+    grid-row: 13/13;
+    
+}
+
+.main2 a.buttonright3 {
+    grid-column: 4/4;
+    grid-row: 14/14; 
+}
+
+.main2 a.buttonright4 {
+    grid-column: 4/4;
+    grid-row: 15/15;
+}
+
+.main2 h3.h3right3 {
+    grid-column: 4/4;
+    grid-row: 16/16;
+
+}
+
+.main2 p.pright6 {
+   grid-column: 4/4;
+   grid-row: 17/17;
+}
+
+.main2 p.pright7 {
+    grid-column: 4/4;
+    grid-row: 18/18;
+}
+
+.main2 p.pright8 {
+    grid-column: 4/4;
+    grid-row: 19/19;
+}
+.main2 a.buttonright5 {
+    grid-column: 4/4;
+    grid-row: 20/20;
+}
+
+
+-----------grid phone------------
+
+@media only screen and (min-width: 599px) {
+    for mobile phones: 
+    .wrapper {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-areas: 
+            "header header" 
+            "main main"
+    }
+    .header {
+        grid-area: header;
+
+    }
+    .title {
+        grid-area: header;
+        position: absolute;
+    }
+    .h1 {
+        grid-area: header;
+        text-align: justify;
+    }
+    .main {
+        grid-area: main;
+        text-align: center;
+    }
+    .title2 {
+        grid-area: header;
+        text-align: left;
+    }
+    .header2 {
+        grid-area: header;
+        object-position: left;
+    }
+    .main2 {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 250px auto auto auto;
+
+}
+
+  .main2 .basicux {
+    grid-row: 2/3;
+ 
+}
+
+.imgbux {
+      grid-area: main;
+      grid-row: 2/3;
+
+}
+
+.main2 .basicontent {
+    grid-row: 2/3;
+}
+
+.imgstory {
+    grid-row: 3/4;    
+}
+
+.main2 .basicanimation {
+    grid-row: 3/4;
+}
+.imgBA {
+    grid-area: main;
+    grid-row: 3/4;
+    
+}
+
+.imgsa {
+    grid-area: main;
+    grid-row: 4/5;
+}
+
+.main2 .basicweb {
+    grid-row: 3/4;
+}
+
+.imgBW {
+    grid-row: 3/4;
+}
+  
+
+}
